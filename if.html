@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conditinal statement</title>
+    </head>
+    <body>
+        <p>Display "GOOD DAY!" if the time befor 18:00</p>
+        <p id="demo">GOOD EVEINING</p>
+
+        <script type="text/javascript">
+            var dateTime = new Date().getHours();
+            var greeting ="";
+
+            if (dateTime <10){
+                greeting = "GOOD MORNING!";
+            } else if ( dateTime <20) {
+                 greeting = " GOOD DAY!";
+            } else {
+                greeting ="GOOD EVENING!";
+            }
+            document.getElementById("demo").innerHTML = greeting;
+         
+        </script>
+    </body>
+</html>

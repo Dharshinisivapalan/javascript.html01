@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>switch statement</title>
+    </head>
+
+    <body>
+        <p> today is a <div id="day-name"></div></p>
+
+        <script type="text/javascript">
+            var day = new Date().getDay();
+
+            var dayText="";
+
+            switch (day)  {
+                case 0 : {
+                          dayText = "SUNDAY";
+                }
+                break;
+
+                case 1 : {
+                    dayText = "MONDAY";
+                }
+                break;
+
+                case 2 : {
+                    dayText = "TUESDAY";
+                }
+                case 3 : {
+                          dayText = "WEDNESDAY";
+                }
+                break;
+                
+                case 4 : {s
+                    dayText = "THURSDAY";
+                }
+                break;
+
+                case 5 : {
+                    dayText = "FRIDAY";
+                }
+                break;
+
+                case 6 : {
+                    dayText = "SATURDAY";
+                }
+                break;
+
+            }
+            
+            document.getElementById("day-name").innerHTML = dayText;
+        </script>
+    </body>
+</html>

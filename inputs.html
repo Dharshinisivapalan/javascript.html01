@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inpus</title>
+    </head>
+
+    <body>
+        
+        <label> YOUR AGE</label> <br>
+        <input id="current-age" type="text" placeholder="your age" value=""/><br>
+        <button onClick="updateAge();">update</button> <br>
+        <br>
+        <p>Greetings, you will be <span id="new-age"></span>next year!</p>
+
+        <script type="text/javascript">
+            function updateAge(){
+                var x = document.getElementById("current-age").value;
+                
+                x = Number(x);
+                x = x + 1;
+                document.getElementById("new-age").innerHTML = x;
+                        }
+        </script>
+    </body>
+</html>
